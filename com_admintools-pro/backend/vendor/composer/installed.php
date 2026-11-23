@@ -1,0 +1,41 @@
+<?php return array(
+    'root' => array(
+        'name' => 'akeeba/admintools',
+        'pretty_version' => '6.x-dev',
+        'version' => '6.9999999.9999999.9999999-dev',
+        'reference' => '4ff78f226d97c5e0795aa8db89b7a9ef4af618fa',
+        'type' => 'project',
+        'install_path' => __DIR__ . '/../../../../',
+        'aliases' => array(),
+        'dev' => false,
+    ),
+    'versions' => array(
+        'akeeba/admintools' => array(
+            'pretty_version' => '6.x-dev',
+            'version' => '6.9999999.9999999.9999999-dev',
+            'reference' => '4ff78f226d97c5e0795aa8db89b7a9ef4af618fa',
+            'type' => 'project',
+            'install_path' => __DIR__ . '/../../../../',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+        'akeeba/phpfinder' => array(
+            'pretty_version' => '1.0.1',
+            'version' => '1.0.1.0',
+            'reference' => '0a00eb712c72000f6dbd4cd3a772bd327c288920',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../akeeba/phpfinder',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+        'akeeba/stats_collector' => array(
+            'pretty_version' => '1.0.0',
+            'version' => '1.0.0.0',
+            'reference' => 'd9362fdf6ba46f2eb78f06548bc13885fe0d8161',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../akeeba/stats_collector',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+    ),
+);

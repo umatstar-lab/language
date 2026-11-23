@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--~
+  ~ @package   admintools
+  ~ @copyright Copyright (c)2010-2026 Nicholas K. Dionysopoulos / Akeeba Ltd
+  ~ @license   GNU General Public License version 3, or later
+  -->
+
+<extension type="plugin" group="task" method="upgrade">
+    <name>PLG_TASK_ADMINTOOLS</name>
+    <version>7.10.0</version>
+    <creationDate>2026-11-23</creationDate>
+    <author>Nicholas K. Dionysopoulos</author>
+    <authorEmail>nicholas@dionysopoulos.me</authorEmail>
+    <authorUrl>https://www.akeeba.com</authorUrl>
+    <copyright>Copyright (c)2010-2026 Nicholas K. Dionysopoulos</copyright>
+    <license>GNU General Public License version 3, or later</license>
+    <description>PLG_TASK_ADMINTOOLS_XML_DESCRIPTION</description>
+    <namespace path="src">Akeeba\Plugin\Task\AdminTools</namespace>
+
+    <files>
+        <folder>forms</folder>
+        <folder plugin="admintools">services</folder>
+        <folder>src</folder>
+
+        <filename>.htaccess</filename>
+        <filename>web.config</filename>
+    </files>
+
+    <languages folder="language">
+        <language tag="en-GB">en-GB/plg_task_admintools.ini</language>
+        <language tag="en-GB">en-GB/plg_task_admintools.sys.ini</language>
+        <language tag="el-GR">el-GR/plg_task_admintools.ini</language>
+        <language tag="el-GR">el-GR/plg_task_admintools.sys.ini</language>
+        <language tag="fr-FR">fr-FR/plg_task_admintools.ini</language>
+        <language tag="fr-FR">fr-FR/plg_task_admintools.sys.ini</language>
+        <language tag="de-DE">de-DE/plg_task_admintools.ini</language>
+        <language tag="de-DE">de-DE/plg_task_admintools.sys.ini</language>
+        <language tag="es-ES">es-ES/plg_task_admintools.ini</language>
+        <language tag="es-ES">es-ES/plg_task_admintools.sys.ini</language>
+        <language tag="it-IT">it-IT/plg_task_admintools.ini</language>
+        <language tag="it-IT">it-IT/plg_task_admintools.sys.ini</language>
+        <language tag="pt-PT">pt-PT/plg_task_admintools.ini</language>
+        <language tag="pt-PT">pt-PT/plg_task_admintools.sys.ini</language>
+    </languages>
+</extension>

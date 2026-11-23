@@ -1,0 +1,30 @@
+{
+	"$schema": "https://developer.joomla.org/schemas/json-schema/web_assets.json",
+	"name": "plg_system_admintools",
+	"version": "7.10.0",
+	"description": "System - Admin Tools",
+	"license": "GPL-3.0-or-later",
+	"assets": [
+		{
+			"name": "plg_system_admintools.blockedrequests",
+			"description": "Handles the buttons in the blocked requests email reminder message",
+			"type": "script",
+			"uri": "plg_system_admintools/blockedrequests.min.js",
+			"attributes": {
+				"defer": true
+			}
+		},
+		{
+			"name": "plg_system_admintools.debuglogfile",
+			"description": "Handles the buttons in the debug log file reminder message",
+			"type": "script",
+			"uri": "plg_system_admintools/debuglogfile.min.js",
+			"dependencies": [
+				"bootstrap.dropdown"
+			],
+			"attributes": {
+				"defer": true
+			}
+		}
+	]
+}

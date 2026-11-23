@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--~
+  ~ @package   admintools
+  ~ @copyright Copyright (c)2010-2026 Nicholas K. Dionysopoulos / Akeeba Ltd
+  ~ @license   GNU General Public License version 3, or later
+  -->
+
+<form addfieldprefix="Akeeba\Component\AdminTools\Administrator\Field">
+    <config>
+        <inlinehelp button="show"/>
+    </config>
+    <fieldset name="details">
+        <!-- This field is required for saving an edited record correctly. DO NOT REMOVE. -->
+        <field
+                name="id"
+                type="hidden"
+                readonly="true"
+                class="readonly"
+        />
+
+        <field
+                name="word"
+                type="text"
+                label="COM_ADMINTOOLS_BADWORDS_LBL_WORD"
+                description="COM_ADMINTOOLS_BADWORDS_LBL_WORD_DESC"
+                required="true"
+        />
+
+        <!--
+          ~ Virtual field. It is NOT a database column; BadwordModel::save() consumes it to decide whether the
+          ~ submitted word is run through preg_quote() before being stored, and BadwordModel::loadFormData()
+          ~ presets it to Yes for new records and No for existing ones.
+          -->
+        <field
+                name="escape"
+                type="list"
+                layout="joomla.form.field.radio.switcher"
+                label="COM_ADMINTOOLS_BADWORDS_LBL_ESCAPE"
+                description="COM_ADMINTOOLS_BADWORDS_LBL_ESCAPE_DESC"
+                default="1"
+                validate="options"
+        >
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+        </field>
+    </fieldset>
+</form>
